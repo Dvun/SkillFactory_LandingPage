@@ -1,0 +1,185 @@
+// main: main.less
+
+section#home {
+  display: flex;
+  height: 707px;
+  background: url('../images/image\ 4.3.jpg') no-repeat center;
+  background-size: cover;
+  box-shadow: 0 0 0 1000px rgba(0, 0, 0, 0.7) inset;
+}
+
+.centerContent {
+  display: flex;
+  flex-direction: column;
+  margin-top: 195px;
+  margin-left: 134px;
+  width: 504px;
+  height: 305px;
+}
+div .title {
+  width: 600px;
+  font-size: 40px;
+  line-height: 53px;
+  text-transform: uppercase;
+  color: white;
+}
+.title span {
+  font-size: 40px;
+  line-height: 53px;
+  text-transform: uppercase;
+  color: #E3B873;
+}
+.text {
+  margin-top: 19px;
+  width: 504px;
+  font-size: 22px;
+  line-height: 36px;
+  color: white;
+}
+div .btn {
+  margin-top: 35px;
+  font-style: italic;
+}
+.btn2 {
+  cursor: pointer;
+  padding: 19px 41px;
+  border-radius: 2px;
+  margin-right: 25px;
+  color: white;
+  border: #E3B873;
+  background: #E3B873;
+}
+.btn3 {
+  cursor: pointer;
+  padding: 19px 23px;
+  border-radius: 2px;
+  color: white;
+  border: 1px solid white;
+  background: none;
+}
+
+@media screen and (max-width: 740px) {
+  .centerContent {
+    margin: 195px auto;
+    padding-left: 10px;
+    padding-right: 10px;
+    width: 636px;
+  }
+  div .title {
+    width: 100%;
+  }
+  .text {
+    width: 100%;
+  }
+  div .buttons {
+    display: inline-flex;
+    justify-content: space-between;
+  }
+}
+
+@media screen and (max-width: 636px) {
+  .centerContent {
+    padding-left: 10px;
+    padding-right: 10px;
+    margin: 50px auto;
+    width: 636px;
+  }
+  div .title {
+    margin-top: 100px;
+    font-size: 23px;
+    width: 100%;
+  }
+  .title span {
+    font-size: 23px;
+  }
+  .text {
+    text-align: center;
+    font-size: 14px;
+    width: 100%;
+  }
+  div .buttons {
+    display: inline-flex;
+    justify-content: space-between;
+  }
+}
+
+@media screen and (max-width: 635px) {
+  .centerContent {
+    padding-left: 10px;
+    padding-right: 10px;
+    margin: 50px auto;
+    width: 320px;
+  }
+  div .title {
+    font-size: 23px;
+    width: 100%;
+  }
+  .title span {
+    font-size: 23px;
+  }
+  .text {
+    font-size: 14px;
+    width: 100%;
+  }
+  div .buttons {
+    display: block;
+  }
+  div .btn {
+    margin: 25px 0 0 0;
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 419px) {
+  .centerContent {
+    padding-left: 10px;
+    padding-right: 10px;
+    margin: 50px auto;
+    width: 320px;
+  }
+  div .title {
+    font-size: 23px;
+    width: 100%;
+  }
+  .title span {
+    font-size: 23px;
+  }
+  .text {
+    font-size: 14px;
+    width: 100%;
+  }
+  div .buttons {
+    display: block;
+  }
+  div .btn {
+    margin: 25px 0 0 0;
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .centerContent {
+    padding-left: 10px;
+    padding-right: 10px;
+    margin: 50px auto;
+    width: 320px;
+  }
+  div .title {
+    font-size: 23px;
+    width: 100%;
+  }
+  .title span {
+    font-size: 23px;
+  }
+  .text {
+    font-size: 14px;
+    width: 100%;
+  }
+  div .buttons {
+    display: block;
+  }
+  div .btn {
+    margin: 25px 0 0 0;
+    width: 100%;
+  }
+}
