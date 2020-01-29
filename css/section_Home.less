@@ -1,185 +1,122 @@
 // main: main.less
 
-section#home {
-  display: flex;
-  height: 707px;
-  background: url('../images/image\ 4.3.jpg') no-repeat center;
+.home {
+  padding-top: 194px;
+  background-image: url(../images/image\ 4.3.jpg);
   background-size: cover;
+  height: 707px;
   box-shadow: 0 0 0 1000px rgba(0, 0, 0, 0.7) inset;
-}
-
-.centerContent {
-  display: flex;
-  flex-direction: column;
-  margin-top: 195px;
-  margin-left: 134px;
-  width: 504px;
-  height: 305px;
-}
-div .title {
-  width: 600px;
-  font-size: 40px;
-  line-height: 53px;
-  text-transform: uppercase;
-  color: white;
-}
-.title span {
-  font-size: 40px;
-  line-height: 53px;
-  text-transform: uppercase;
-  color: #E3B873;
-}
-.text {
-  margin-top: 19px;
-  width: 504px;
-  font-size: 22px;
-  line-height: 36px;
-  color: white;
-}
-div .btn {
-  margin-top: 35px;
-  font-style: italic;
-}
-.btn2 {
-  cursor: pointer;
-  padding: 19px 41px;
-  border-radius: 2px;
-  margin-right: 25px;
-  color: white;
-  border: #E3B873;
-  background: #E3B873;
-}
-.btn3 {
-  cursor: pointer;
-  padding: 19px 23px;
-  border-radius: 2px;
-  color: white;
-  border: 1px solid white;
-  background: none;
-}
-
-@media screen and (max-width: 740px) {
-  .centerContent {
-    margin: 195px auto;
-    padding-left: 10px;
-    padding-right: 10px;
-    width: 636px;
+  @media screen and (min-width: 500px) and (max-width: 768px) {
+    padding-top: 85px;
+    height: 550px;
   }
-  div .title {
+  @media screen and (min-width: 320px) and (max-width: 500px) {
+    padding-top: 85px;
+    height: 476px;
+  }
+  .container {
+    display: flex;
+    flex-direction: column;
     width: 100%;
-  }
-  .text {
-    width: 100%;
-  }
-  div .buttons {
-    display: inline-flex;
-    justify-content: space-between;
-  }
-}
-
-@media screen and (max-width: 636px) {
-  .centerContent {
-    padding-left: 10px;
-    padding-right: 10px;
-    margin: 50px auto;
-    width: 636px;
-  }
-  div .title {
-    margin-top: 100px;
-    font-size: 23px;
-    width: 100%;
-  }
-  .title span {
-    font-size: 23px;
-  }
-  .text {
-    text-align: center;
-    font-size: 14px;
-    width: 100%;
-  }
-  div .buttons {
-    display: inline-flex;
-    justify-content: space-between;
-  }
-}
-
-@media screen and (max-width: 635px) {
-  .centerContent {
-    padding-left: 10px;
-    padding-right: 10px;
-    margin: 50px auto;
-    width: 320px;
-  }
-  div .title {
-    font-size: 23px;
-    width: 100%;
-  }
-  .title span {
-    font-size: 23px;
-  }
-  .text {
-    font-size: 14px;
-    width: 100%;
-  }
-  div .buttons {
-    display: block;
-  }
-  div .btn {
-    margin: 25px 0 0 0;
-    width: 100%;
-  }
-}
-
-@media screen and (max-width: 419px) {
-  .centerContent {
-    padding-left: 10px;
-    padding-right: 10px;
-    margin: 50px auto;
-    width: 320px;
-  }
-  div .title {
-    font-size: 23px;
-    width: 100%;
-  }
-  .title span {
-    font-size: 23px;
-  }
-  .text {
-    font-size: 14px;
-    width: 100%;
-  }
-  div .buttons {
-    display: block;
-  }
-  div .btn {
-    margin: 25px 0 0 0;
-    width: 100%;
-  }
-}
-
-@media screen and (max-width: 320px) {
-  .centerContent {
-    padding-left: 10px;
-    padding-right: 10px;
-    margin: 50px auto;
-    width: 320px;
-  }
-  div .title {
-    font-size: 23px;
-    width: 100%;
-  }
-  .title span {
-    font-size: 23px;
-  }
-  .text {
-    font-size: 14px;
-    width: 100%;
-  }
-  div .buttons {
-    display: block;
-  }
-  div .btn {
-    margin: 25px 0 0 0;
-    width: 100%;
+    max-width: 1440px;
+    margin: 0 auto;
+    @media screen and (min-width: 500px) and (max-width: 768px) {
+      padding-left: 18px;
+      padding-right: 18px;
+    }
+    @media screen and (min-width: 320px) and (max-width: 500px) {
+      padding-left: 18px;
+      padding-right: 18px;
+    }
+    .title {
+      width: 600px;
+      font-size: 40px;
+      line-height: 53px;
+      text-transform: uppercase;
+      color: white;
+      @media screen and (min-width: 500px) and (max-width: 768px) {
+        width: 100%;
+        text-align: center;
+      }
+      @media screen and (min-width: 320px) and (max-width: 500px) {
+        font-size: 21px;
+        line-height: 132.83%;
+        width: 100%;
+      }
+      span {
+        font-size: 40px;
+        line-height: 53px;
+        text-transform: uppercase;
+        color: #E3B873;
+        @media screen and (min-width: 320px) and (max-width: 500px) {
+          font-size: 21px;
+          line-height: 132.83%;
+          width: 100%;
+        }
+      }
+    }
+    .homeText {
+      width: 504px;
+      font-size: 22px;
+      line-height: 36px;
+      color: white;
+      padding-top: 19px;
+      padding-bottom: 41px;
+      @media screen and (min-width: 500px) and (max-width: 768px) {
+        width: 100%;
+        text-align: center;
+      }
+      @media screen and (min-width: 320px) and (max-width: 500px) {
+        font-size: 14px;
+        line-height: 135.84%;
+        padding-top: 16px;
+        padding-bottom: 32px;
+        width: 100%;
+      }
+    }
+    .buttons {
+      @media screen and (min-width: 500px) and (max-width: 768px) {
+        display: flex;
+        width: 100%;
+        justify-content: space-around;
+      }
+      @media screen and (width: 500px) {
+        display: block;
+      }
+      .btn2 {
+        cursor: pointer;
+        background: #E3B873;
+        box-shadow: 0px 5px 15px rgba(227, 184, 115, 0.3);
+        border-radius: 2px;
+        border: none;
+        font-style: italic;
+        font-size: 11px;
+        line-height: 15px;
+        text-align: center;
+        color: #FFFFFF;
+        padding: 19px 41px;
+        margin-right: 20px;
+        @media screen and (min-width: 320px) and (max-width: 500px) {
+          margin-right: 0;
+          margin-bottom: 26px;
+          width: 100%;
+        }
+      }
+      .btn3 {
+        cursor: pointer;
+        font-style: italic;
+        font-size: 11px;
+        line-height: 15px;
+        text-align: center;
+        color: #FFFFFF;
+        border: 1px solid #FFFFFF;
+        border-radius: 2px;
+        background: none;
+        padding: 18px 23px;
+        @media screen and (min-width: 320px) and (max-width: 500px) {
+          width: 100%;
+        }
+      }
+    }
   }
 }
