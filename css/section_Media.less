@@ -5,10 +5,28 @@
   height: 953px;
   background-size: cover;
   box-shadow: 0 0 0 1000px rgba(24, 24, 24, 0.9) inset;
+  @media screen and (min-width: 768px) and (max-width: 1129px) {
+  }
+  @media screen and (min-width: 501px) and (max-width: 768px) {
+  }
+  @media screen and (min-width: 320px) and (max-width: 500px) {
+    margin-top: 150px;
+    background-color: #131313;
+    width: 100%;
+  }
   .container {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    @media screen and (min-width: 768px) and (max-width: 1129px) {
+    }
+    @media screen and (min-width: 501px) and (max-width: 768px) {
+    }
+    @media screen and (min-width: 320px) and (max-width: 500px) {
+      padding-left: 18px;
+      padding-right: 18px;
+      width: 100%;
+    }
     .questions {
       padding-left: 171px;
       padding-right: 171px;
@@ -17,6 +35,17 @@
       height: 445px;
       max-width: 883px;
       background-color: #131313;
+      @media screen and (min-width: 768px) and (max-width: 1129px) {
+      }
+      @media screen and (min-width: 501px) and (max-width: 768px) {
+      }
+      @media screen and (min-width: 320px) and (max-width: 500px) {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        padding: 0;
+        margin-top: 100px;
+      }
       .questions_title {
         margin-top: 34px;
         font-size: 20px;
@@ -30,6 +59,15 @@
         .nameAndPhoneInputs {
           display: flex;
           justify-content: space-between;
+          @media screen and (min-width: 768px) and (max-width: 1129px) {
+          }
+          @media screen and (min-width: 501px) and (max-width: 768px) {
+          }
+          @media screen and (min-width: 320px) and (max-width: 500px) {
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+          }
           .nameInput {
             display: flex;
             flex-direction: column;
