@@ -1,0 +1,93 @@
+// main: main.less
+
+.clients {
+  height: 900px;
+  .container {
+    margin-top: 110px;
+    .ourClients{
+      display: flex;
+      flex-direction: column;
+    }
+    .ourClients_title {
+      font-size: 20px;
+      line-height: 28px;
+      text-transform: uppercase;
+      color: #181818;
+      text-align: center;
+    }
+    .ourClients_img {
+      margin-top: 13px;
+      display: flex;
+      width: 100%;
+      max-width: 100px;
+      margin: 0 auto;
+    }
+    .clientText {
+      margin-top: 24px;
+      text-align: center;
+      font-size: 18px;
+      line-height: 29px;
+      color: #363636;
+    }
+    .threeClients {
+      height: 428px;
+      margin-top: 39px;
+      display: flex;
+      justify-content: space-around;
+      .clientBox {
+        padding-top: 24px;
+        padding-left: 20px;
+        padding-right: 31px;
+        box-shadow: 0px 10px 50px rgba(0, 0, 0, 0.04);
+        width: 376px;
+        background-color: white;
+      }
+      .photoAndName {
+        display: flex;
+      }
+      .clientFace {
+        border-radius: 50%;
+        width: 76px;
+        height: 76px;
+        margin-bottom: 23px;
+        margin-right: 20px;
+      }
+      .clientName {
+        font-size: 18px;
+        line-height: 23px;
+        color: #181818;
+        width: 100%;
+        max-width: 176px;
+        font-family: Yeseva One;
+        margin-top: 14px;
+      }
+      .clientSpeach {
+        font-size: 13px;
+        line-height: 180%;
+        color: #959595;
+        text-transform: lowercase;
+        margin-bottom: 63px;
+      }
+      .clientBtn {
+        display: flex;
+        margin-left: -20px;
+        .clientSize {
+          font-family: Yeseva One;
+          font-style: normal;
+          font-size: 17px;
+          line-height: 24px;
+          text-transform: uppercase;
+          color: #FFFFFF;
+          padding: 8px 12px 5px 17px;
+          background-color: #E3B873;
+          box-shadow: 5px 5px 20px rgba(227, 184, 115, 0.5);
+          border: none;
+          border-right: 0.75px solid white;
+          img {
+            margin-right: 15px;
+          }
+        }
+      }
+    }
+  }
+}
