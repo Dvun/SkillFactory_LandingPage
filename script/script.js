@@ -25,9 +25,7 @@ const projects = [
 
 const buttonSliderLeft = document.querySelector('.leftArrow')
 const buttonSliderRight = document.querySelector('.rightArrow')
-const circlesFirst= document.querySelectorAll('.circle first')
-const circlesSecond= document.querySelectorAll('.circle second')
-const circlesThird= document.querySelectorAll('.circle third')
+const circles= document.querySelectorAll('.circle')
 const cityText = document.querySelector('#city')
 const timeText = document.querySelector('#time')
 const areaText = document.querySelector('#area')
@@ -36,27 +34,60 @@ const sliderPic = document.querySelector('#sliderPic')
 let slide = 0
 
 
+
+buttonSliderRight.onclick = () => {
   
-
-
-  buttonSliderRight.onclick = function() {
+  if (slide == 0) {
+    circles[2].classList.remove('circle_active')
+    circles[0].classList.add('circle_active')
     
+  } else if (slide == -1) {
+    circles[0].classList.remove('circle_active')
+    circles[1].classList.add('circle_active')
+    
+  } else if (slide == -2) {
+    circles[1].classList.remove('circle_active')
+    circles[2].classList.add('circle_active')
   }
+  slidePlus()
+}
+
+buttonSliderLeft.onclick = () => {
+  
+  if (slide == 0) {
+    circles[1].classList.remove('circle_active')
+    circles[2].classList.remove('circle_active')
+    circles[0].classList.add('circle_active')
+    
+  } else if (slide == -1) {
+    circles[2].classList.remove('circle_active')
+    circles[1].classList.add('circle_active')
+    circles[0].classList.remove('circle_active')
+    
+  } else if (slide == -2) {
+    circles[1].classList.remove('circle_active')
+    circles[0].classList.remove('circle_active')
+    circles[2].classList.add('circle_active')
+  }
+  slideMinus()
+}
 
 
-function slideRigth() {
-  if (slide >= 2) {
+
+
+
+
+slidePlus = () => {
+  slide -= 1
+  if (slide < -2) {
     slide = 0
-  } else {
-    slide += 1
   }
 }
 
-function slideLeft() {
-  if (slide >= 0) {
-    slide = 2
-  } else {
-    slide -= 1
+slideMinus = () => {
+  slide += 1
+  if (slide > 0) {
+    slide = -2
   }
+  console.log(slide);
 }
-
